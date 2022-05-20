@@ -26,7 +26,7 @@ items_chosen = [[sg.Text('You have Chosen')],
 layout = [[sg.Column(choices, element_justification='c'), sg.Column(items_chosen, element_justification='c')]]
 
 #Define Window
-window =sg.Window("Column and Frame",layout, element_justification='c')
+window =sg.Window("Column and Frame",layout)
 #Read  values entered by user
 event,values=window.read()
 #access all the values and if selected add them to a string
